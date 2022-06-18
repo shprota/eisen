@@ -1,5 +1,16 @@
 package data
 
+type PaginationMeta struct {
+	Total  uint `json:"total"`
+	Limit  uint `json:"limit"`
+	Offset int  `json:"offset"`
+}
+
+type CurrenciesDto struct {
+	Meta       PaginationMeta `json:"meta"`
+	Currencies []string       `json:"currencies"`
+}
+
 var Currencies []string
 
 func init() {
