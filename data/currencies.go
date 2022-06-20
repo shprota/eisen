@@ -1,5 +1,10 @@
 package data
 
+type DirectionUrlParams struct {
+	UserId    string `uri:"userId" binding:"required"`
+	Direction string `uri:"direction" binding:"required,oneof=sell buy"`
+}
+
 type PaginationMeta struct {
 	Total  uint `json:"total"`
 	Limit  uint `json:"limit"`

@@ -16,6 +16,11 @@ func addCurrencyRoutes(rg *gin.RouterGroup) {
 }
 
 func getUserCurrencies(c *gin.Context) {
+	var params data.DirectionUrlParams
+	if err := c.ShouldBindUri(&params); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
 	c.JSON(http.StatusOK, GetPage(c.Param("userId"), c.Param("direction"), c.Query("offset"), c.Query("limit")))
 }
 
@@ -24,6 +29,11 @@ func getBalances(c *gin.Context) {
 }
 
 func exchange(c *gin.Context) {
+	var params data.DirectionUrlParams
+	if err := c.ShouldBindUri(&params); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
 	data := data.ExchangeDto{}
 	c.BindJSON(data)
 	c.JSON(http.StatusOK, Exchange(c.Param("userId"), c.Param("Direction"), data))

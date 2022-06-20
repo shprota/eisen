@@ -16,10 +16,13 @@ Each API endpoint takes the `Authentication: Bearer` token identifying/authorizi
 1. ### Currency list: For a given user, get the currencies they can transact
 >Endpoint:
 >
->`GET /currencies?userId=<user_id>&limit=10&offset=0`
+>`GET /user/<user_id>/currencies/<direction>?limit=10&offset=0`
+>
+>Path Parameters:
+>- `user_id: string`   - Required. Unique user identifier
+>- `direction: string` - Required. Possible values: `sell` or `buy`
 >
 >Query Parameters:
->- `user_id: string`   - Required. Unique user identifier
 >- `limit: number`     - Optional. Maximum number of currencies to return (defaults to 10)
 >- `offset: number`    - Optional. Offset from the start of the list (defaults to 0)
 >
@@ -49,10 +52,11 @@ Each API endpoint takes the `Authentication: Bearer` token identifying/authorizi
 2. ### Buy/Sell a selected currency for a given user
 > Endpoint
 >
->`POST /exchange?userId=<user_id>`
+>`POST /user/<user_id>/exchange/direction`
 >
->Query Parameters:
+>Path Parameters:
 >- `user_id: string`   - Required. Unique user identifier
+>- `direction: string` - Required. Possible values: `sell` or `buy`
 > 
 >Request body payload:
 >
@@ -83,10 +87,14 @@ Each API endpoint takes the `Authentication: Bearer` token identifying/authorizi
 
 >Endpoint
 >
->`GET /balances?userId=<user_id>?limit=10&offset=0`
+>`GET /user/<user_id>/balances?limit=10&offset=0`
+>
+>Path Parameters:
+> 
+>- `user_id: string`   - Required. Unique user identifier
 >
 >Query Parameters:
->- `user_id: string`   - Required. Unique user identifier
+>
 >- `limit: number`     - Optional. Maximum number of currencies to return (defaults to 10)
 >- `offset: number`    - Optional. Offset from the start of the list (defaults to 0)
 > 
@@ -115,3 +123,11 @@ Each API endpoint takes the `Authentication: Bearer` token identifying/authorizi
 >}
 >```
 >
+>
+
+## Possible improvements
+
+1. Tests
+1. Better validation
+1. Exception handling
+1. User doesn't exist simulation
