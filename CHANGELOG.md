@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/shprota/eisen/compare/v1.0.0...v1.0.1) (2022-08-26)
+
+
+### Bug Fixes
+
+* **exchange:** handle errors ([a312266](https://github.com/shprota/eisen/commit/a312266106ec22151cbc29f2dfb7e38344e77a1a))
+* **main:** handle errors ([a704bab](https://github.com/shprota/eisen/commit/a704bab6ce0817186b52267d9f09b19399dbb9dd))
+
 ## 1.0.0 (2022-08-26)
 
 
