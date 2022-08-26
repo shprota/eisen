@@ -34,7 +34,11 @@ func exchange(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
-	data := data.ExchangeDto{}
-	c.BindJSON(data)
-	c.JSON(http.StatusOK, Exchange(c.Param("userId"), c.Param("Direction"), data))
+	exchangeDto := data.ExchangeDto{}
+	err := c.BindJSON(exchangeDto)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
+		return
+	}
+	c.JSON(http.StatusOK, Exchange(c.Param("userId"), c.Param("Direction"), exchangeDto))
 }
