@@ -1,6 +1,7 @@
 package api
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 )
 
@@ -10,7 +11,10 @@ var (
 
 func Run() {
 	getRoutes()
-	router.Run(":5000")
+	err := router.Run(":5000")
+	if err != nil {
+		fmt.Printf("Error occured: %s", err.Error())
+	}
 }
 
 func getRoutes() {
