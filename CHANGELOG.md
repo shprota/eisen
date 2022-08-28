@@ -1,3 +1,13 @@
+## [0.3.1](https://github.com/shprota/eisen/compare/v0.3.0...v0.3.1) (2022-08-28)
+
+
+### Bug Fixes
+
+* **ci:** fix pre-commit hook ([d1398f7](https://github.com/shprota/eisen/commit/d1398f7aff779ed4d70393e174e0faa31c21afb6))
+* **ci:** pre-commit hook ([8d96afa](https://github.com/shprota/eisen/commit/8d96afab8c1d03900b8cabdf161d37ee414128f2))
+
+
+
 # [0.3.0](https://github.com/shprota/eisen/compare/v0.2.1...v0.3.0) (2022-08-28)
 
 
@@ -43,7 +53,6 @@
 
 * **ci:** another version system ([2f4a707](https://github.com/shprota/eisen/commit/2f4a7070bfbf5213ed008d58394b3720bd599805))
 * **ci:** another version system 2 ([8ebbee6](https://github.com/shprota/eisen/commit/8ebbee60efe92663f9712cf2ac3f4c129932bc5e))
-* **project:** add release management ([50876c9](https://github.com/shprota/eisen/commit/50876c9195ea3722006148d028d1b605bb4eac92))
 * **rp:** add rp configs ([6ee1d78](https://github.com/shprota/eisen/commit/6ee1d784e72b439cd31e0c52d5b7dd925c546430))
 
 
