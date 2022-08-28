@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-export function preCommit(props) {
+module.exports = function preCommit(props) {
     const chartPath = 'helm/publicapi/Chart.yml';
     const chart = fs.readFileSync(chartPath);
     fs.writeFileSync(chartPath, chart.toString()
