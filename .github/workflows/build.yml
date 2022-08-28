@@ -19,10 +19,7 @@ jobs:
         with:
           skip-git-pull: "true"
           version-file: version.yaml
-      - name: Update version
-        uses: mikefarah/yq@master
-        with:
-          cmd: yq eval -i '.versionString=48' version.yaml
+          pre-commit: version-update.js
       - name: Build executable
         uses: actions/setup-go@v3
         with:
