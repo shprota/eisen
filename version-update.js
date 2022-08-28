@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-module.exports = function preCommit(props) {
+exports.preCommit = async (props) => {
     const chartPath = 'helm/publicapi/Chart.yml';
     fs.writeFileSync('version.txt', props.version);
     console.log('Wrote version.txt');
