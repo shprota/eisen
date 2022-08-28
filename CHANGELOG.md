@@ -1,3 +1,13 @@
+## [0.3.4](https://github.com/shprota/eisen/compare/v0.3.3...v0.3.4) (2022-08-28)
+
+
+### Bug Fixes
+
+* **ci:** debug paths ([bc37c54](https://github.com/shprota/eisen/commit/bc37c5482438eebc8ab9425359f92b64add9d239))
+* **ci:** fix pre-commit hook ([d20e626](https://github.com/shprota/eisen/commit/d20e626c5901c33d52045804b8f98b3bac8af30a))
+
+
+
 ## [0.3.3](https://github.com/shprota/eisen/compare/v0.3.2...v0.3.3) (2022-08-28)
 
 
@@ -32,15 +42,6 @@
 ### Features
 
 * **ci:** patch version ([fa29762](https://github.com/shprota/eisen/commit/fa29762aedade0943d630d9d2dad6a4175d19cd1))
-
-
-
-## [0.2.1](https://github.com/shprota/eisen/compare/v0.2.0...v0.2.1) (2022-08-28)
-
-
-### Bug Fixes
-
-* **ci:** fix go version ([34975f5](https://github.com/shprota/eisen/commit/34975f5e4a8f7d8c7cd8fe7b2fe7ae638ada6a62))
 
 
 
