@@ -1,3 +1,17 @@
+# [0.2.0](https://github.com/shprota/eisen/compare/v0.1.0...v0.2.0) (2022-08-28)
+
+
+### Bug Fixes
+
+* **ci:** fix build step ([d5e3a62](https://github.com/shprota/eisen/commit/d5e3a625936e58f313df4817706bcdfd0aa6f812))
+
+
+### Features
+
+* **ci:** add build step ([fd809e5](https://github.com/shprota/eisen/commit/fd809e51296025a5a3e8af5a6770bd1479986cef))
+
+
+
 # [0.1.0](https://github.com/shprota/eisen/compare/v1.0.0...v0.1.0) (2022-08-28)
 
 
