@@ -21,5 +21,7 @@ jobs:
           version-file: version.yaml
       - name: Build executable
         uses: actions/setup-go@v3
+        with:
+          go-version: '^1.18.0'
       - run: go build -o build/api .
 
