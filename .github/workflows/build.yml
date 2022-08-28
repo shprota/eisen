@@ -7,7 +7,7 @@ on:
       - master
 name: Build pipeline
 jobs:
-  release-please:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,6 +19,10 @@ jobs:
         with:
           skip-git-pull: "true"
           version-file: version.yaml
+      - name: Update version
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq eval -i '.versionString=48' version.yaml
       - name: Build executable
         uses: actions/setup-go@v3
         with:
