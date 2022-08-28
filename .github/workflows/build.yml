@@ -19,7 +19,7 @@ jobs:
         with:
           skip-git-pull: "true"
           version-file: version.yaml
-          pre-commit: version-update.js
+          pre-commit: './version-update.js'
       - name: Build executable
         uses: actions/setup-go@v3
         with:
