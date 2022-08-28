@@ -7,7 +7,7 @@ on:
       - master
 name: Build pipeline
 jobs:
-  build:
+  prepare:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,6 +20,10 @@ jobs:
           skip-git-pull: "true"
           version-file: version.yaml
           pre-commit: './version-update.js'
+  build:
+    runs-on: ubuntu-latest
+    needs: [prepare]
+    steps:
       - name: Build executable
         uses: actions/setup-go@v3
         with:
