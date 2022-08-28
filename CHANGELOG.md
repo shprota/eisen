@@ -1,3 +1,12 @@
+## [0.3.6](https://github.com/shprota/eisen/compare/v0.3.5...v0.3.6) (2022-08-28)
+
+
+### Bug Fixes
+
+* **ci:** seq jobs ([c82d06f](https://github.com/shprota/eisen/commit/c82d06f6a93f52e1b120c3df1fa59914480651a6))
+
+
+
 ## [0.3.5](https://github.com/shprota/eisen/compare/v0.3.4...v0.3.5) (2022-08-28)
 
 
@@ -32,16 +41,6 @@
 ### Bug Fixes
 
 * **ci:** debug pre-commit hook ([fe8f6d1](https://github.com/shprota/eisen/commit/fe8f6d1867cca388ca60441caa5bd75729b3ef78))
-
-
-
-## [0.3.1](https://github.com/shprota/eisen/compare/v0.3.0...v0.3.1) (2022-08-28)
-
-
-### Bug Fixes
-
-* **ci:** fix pre-commit hook ([d1398f7](https://github.com/shprota/eisen/commit/d1398f7aff779ed4d70393e174e0faa31c21afb6))
-* **ci:** pre-commit hook ([8d96afa](https://github.com/shprota/eisen/commit/8d96afab8c1d03900b8cabdf161d37ee414128f2))
 
 
 
