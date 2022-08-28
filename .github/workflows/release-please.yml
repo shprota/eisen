@@ -5,7 +5,7 @@ on:
   pull_request_target:
     branches:
       - master
-name: release-please
+name: Build pipeline
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -19,3 +19,7 @@ jobs:
         with:
           skip-git-pull: "true"
           version-file: version.yaml
+      - name: Build executable
+        uses: actions/setup-go@v3
+        run: go build -o build/api .
+
