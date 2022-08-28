@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/shprota/eisen/compare/v0.2.0...v0.2.1) (2022-08-28)
+
+
+### Bug Fixes
+
+* **ci:** fix go version ([34975f5](https://github.com/shprota/eisen/commit/34975f5e4a8f7d8c7cd8fe7b2fe7ae638ada6a62))
+
+
+
 # [0.2.0](https://github.com/shprota/eisen/compare/v0.1.0...v0.2.0) (2022-08-28)
 
 
