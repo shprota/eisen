@@ -2,12 +2,20 @@ on:
   push:
     branches:
       - master
+  pull_request_target:
+    branches:
+      - master
 name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Promote Version
         uses: TriPSs/conventional-changelog-action@v3
         with:
+          skip-git-pull: "true"
           version-file: version.yaml
